@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>نظام AZ</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/index.css" />
+  <link rel="stylesheet" href="css/about.css" />
+</head>
+
+<body>
+  <div class="head">
+    <nav>
+      <div class="logo">
+        <img src="img/mainlogo.png" alt="الشعار" />
+        
+      </div>
+
+      <div class="nav-links">
+        <a href="index.html" class="active">الرئيسية</a>
+        <a href="#service">الخدمات</a>
+        <a href="#projectsss">الاعمال</a>
+        <a href="About.html">معلومات عنا</a>
+        <a href="#">الوظائف</a>
+      </div>
+
+      <a href="#" class="contact-btn">تواصل معنا</a>
+
+      <div class="menu-icon" onclick="toggleMenu()">
+        <i class="bx bx-menu-alt-left"></i>
+      </div>
+
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="index.html">الرئيسية</a>
+        <a href="#service">الخدمات</a>
+        <a href="#projectsss">الاعمال</a>
+        <a href="About.html">معلومات عنا</a>
+        <a href="#">الوظائف</a>
+        <a href="#">تواصل معنا</a>
+      </div>
+    </nav>
+
+    <section class="hero">
+      <!-- ===== الجانب الأيسر ===== -->
+      <div class="hero-left">
+        <small>ابتكر. تطور. ألهم.</small>
+        <h1>تحويل الرؤى إلى تميز رقمي</h1>
+        <p>
+          في COMPUTING GATE نصنع تجارب رقمية مؤثرة. بصفتنا شريكك الرقمي الاستراتيجي، نمزج بين الإبداع والتكنولوجيا الحديثة لدفع علامتك التجارية نحو القمة. انضم إلينا في رحلة حيث يلتقي الابتكار بالتأثير.
+        </p>
+        <div class="hero-buttons">
+          <button class="btn">مشاريعنا</button>
+          <button class="btn secondary">تواصل معنا</button>
+        </div>
+      </div>
+
+      <!-- ===== الجانب الأيمن ===== -->
+      <div class="hero-right">
+        <div class="tabs">
+          <span class="active">تصميم</span>
+          <span>تطوير</span>
+          <span>إدارة</span>
+        </div>
+
+        <div class="tools-title">الأدوات التي نستخدمها في التصميم</div>
+
+        <div class="tools-icons">
+          <i class="bx bxs-color"></i>
+          <i class="bx bx-rocket"></i>
+          <i class="bx bx-laptop"></i>
+          <i class="bx bx-brush"></i>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <section class="customers2" >
+    <div id="grid"></div>
+
+    <div class="customers-title">عملاؤنا</div>
+
+    <div class="customers-rows">
+      <div class="customer-row">
+        <div class="customer-item"><img src="img/Logo.png" alt="Spotify" /></div>
+        <div class="customer-item"><img src="img/Logo 2.png" alt="WhatsApp" /></div>
+        <div class="customer-item"><img src="img/Logo 3.png" alt="Netflix" /></div>
+        <div class="customer-item"><img src="img/logo4.png" alt="Dropbox" /></div>
+        <div class="customer-item"><img src="img/Logo 5.png" alt="Zapier" /></div>
+      </div>
+
+      <div class="customer-row">
+        <div class="customer-item"><img src="img/logo 6.png" alt="Zoom" /></div>
+        <div class="customer-item"><img src="img/logo7.png" alt="Slack" /></div>
+        <div class="customer-item"><img src="img/Logo 8.png" alt="Google" /></div>
+        <div class="customer-item"><img src="img/Logo 9.png" alt="Amazon" /></div>
+        <div class="view-all">
+          مشاهدة الكل
+          <div class="icon"><i class="bx bx-left-arrow-alt"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services3" id="service">
+   
+
+    <div class="services-container">
+      <div class="services-header">
+        <h1>مجموعة خدماتنا الشاملة</h1>
+        <p>تقدم COMPUTING GATE مجموعة متنوعة من الخدمات المبتكرة المصممة بعناية لتلبية احتياجاتك وتحقيق النجاح الرقمي.</p>
+      </div>
+
+      <div class="slider-wrapper">
+        <div class="slider-track">
+
+          <div class="service-card">
+            <div>
+              <div class="service-card-header">
+                <div class="part1">
+                  <div class="service-icon"><img src="img/Icon Container.png" alt="" /></div>
+                  <div class="service-title">تصميم</div>
+                </div>
+                <div class="view-projects">مشاريعنا</div>
+              </div>
+              <div class="tags">
+                <div class="tag">تصميم UI/UX</div>
+                <div class="tag">تصميم هوية</div>
+                <div class="tag">إدارة السوشيال</div>
+              </div>
+              <div class="service-desc">
+                فريق التصميم لدينا شغوف بابتكار تصميمات رائعة تركز على تجربة المستخدم وتجذب جمهورك.
+              </div>
+            </div>
+            <div><button class="learn-more-btn">المزيد</button></div>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div class="service-card-header">
+                <div class="part1">
+                  <div class="service-icon"><img src="img/Icon Container2.png" alt="" /></div>
+                  <div class="service-title">تطوير</div>
+                </div>
+                <div class="view-projects">مشاريعنا</div>
+              </div>
+              <div class="tags">
+                <div class="tag">فرونت إند</div>
+                <div class="tag">باك إند</div>
+                <div class="tag">فل ستاك</div>
+              </div>
+              <div class="service-desc">
+                فريق التطوير لدينا يقدم حلولاً تقنية متقدمة تلبي جميع متطلبات أعمالك الرقمية.
+              </div>
+            </div>
+            <div><button class="learn-more-btn">المزيد</button></div>
+          </div>
+
+          <div class="service-card">
+            <div>
+              <div class="service-card-header">
+                <div class="part1">
+                  <div class="service-icon"><img src="img/Icon Container3.png" alt="" /></div>
+                  <div class="service-title">إدارة</div>
+                </div>
+                <div class="view-projects">مشاريعنا</div>
+              </div>
+              <div class="tags">
+                <div class="tag">إدارة مشاريع</div>
+                <div class="tag">إعلانات</div>
+              </div>
+              <div class="service-desc">
+                نضمن لك إدارة فعالة لمشاريعك لتحقيق أهدافك بكفاءة وفي الوقت المحدد.
+              </div>
+            </div>
+            <div><button class="learn-more-btn">المزيد</button></div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="slider-controls">
+        <button id="prevBtn">❮</button>
+        <button id="nextBtn">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="main-section">
+    <div class="left-info">
+      <h2>فتح إمكانياتك الرقمية</h2>
+      <p>
+        اكتشف ميزة COMPUTING GATE - حيث يلتقي الشغف بالاحترافية. شريك موثوق لتحقيق نجاح رقمي حقيقي.
+      </p>
+      <div class="action-btns">
+        <button class="action-btn">مشاريعنا</button>
+        <button class="action-btn primary">تواصل معنا</button>
+      </div>
+    </div>
+
+    <div class="right-info">
+
+      <div class="info-card">
+        <div class="card-header">
+          <img src="img/cap.png" alt="خبرة">
+          <div class="card-title">الخبرة</div>
+        </div>
+        <div class="card-desc">
+          لدينا فريق متمرس ذو خبرة واسعة في تقديم حلول رقمية مبتكرة.
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <img src="img/peapole.png" alt="العميل أولاً">
+          <div class="card-title">نهج يركز على العميل</div>
+        </div>
+        <div class="card-desc">
+          نضع احتياجات عملائنا في المقام الأول ونقدم حلولاً مخصصة تناسب تطلعاتهم.
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <img src="img/nash.png" alt="النتائج">
+          <div class="card-title">نتائج مضمونة</div>
+        </div>
+        <div class="card-desc">
+          نركز على تحقيق نتائج ملموسة من خلال دمج الإبداع بالخبرة التقنية.
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="card-header">
+          <img src="img/crown.png" alt="الشراكة">
+          <div class="card-title">شراكة دائمة</div>
+        </div>
+        <div class="card-desc">
+          نبني علاقات طويلة الأمد مع عملائنا مبنية على الثقة والنجاح المشترك.
+        </div>
+      </div>
+
+      <div class="center-logo-container">
+        <div class="center-logo">
+          <img src="img/mainlogo.png" alt="الشعار">
+        </div>
+        <img src="img/Lines Container 1.png" alt="خط علوي" class="lines-image-top">
+        <img src="img/Lines Container.png" alt="خط سفلي" class="lines-image-bottom">
+      </div>
+
+    </div>
+  </section>
+   
+
+  <section class="digital-projects-section" id="projectsss">
+  <h2>عرض الإبداع الرقمي</h2>
+  <p>استكشف معرض أعظم إنجازاتنا وشاهد الدمج السلس بين الإبداع والتكنولوجيا في كل مشروع ضمن محفظتنا المتنوعة.</p>
+
+  <div class="digital-projects-header">
+    <div class="digital-tabs">
+      <div class="digital-tab active" data-type="design">تصميم</div>
+      <div class="digital-tab" data-type="development">تطوير</div>
+      <div class="digital-tab" data-type="management">إدارة</div>
+    </div>
+    <button class="digital-btn-view-all">عرض كل المشاريع</button>
+  </div>
+
+  <div class="digital-projects-grid" id="digitalProjectContainer">جاري تحميل المشاريع...</div>
+
+  <div class="digital-nav-buttons">
+    <button class="digital-nav-button" id="digitalPrevBtn">❮</button>
+    <button class="digital-nav-button" id="digitalNextBtn">❯</button>
+  </div>
+</section>
+
+
+
+<section class="review-section">
+  <h2>أصوات من عملائنا السعداء</h2>
+  <p class="review-section-desc">اكتشف آراء وتجارب عملائنا الذين استفادوا من خدماتنا التقنية المتميزة وشاركوا رحلتهم معنا.</p>
+
+  <div class="review-container">
+    <div class="review-slider" id="testimonialSlider">
+
+      <!-- كارت 1 -->
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Client Image">
+          <div>
+            <h4>سارة جونسون</h4>
+            <span>مؤسس HungryBites</span>
+          </div>
+        </div>
+        <p class="review-text">
+          التعامل مع COMPUTING GATE كان سلسًا للغاية. فهموا رؤيتنا وقدموا تطبيقًا رائعًا لخدمة توصيل الطعام!
+        </p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://randomuser.me/api/portraits/men/2.jpg" alt="Client Image">
+          <div>
+            <h4>جون سميث</h4>
+            <span>CEO Chic Boutique</span>
+          </div>
+        </div>
+        <p class="review-text">
+          COMPUTING GATE طورت متجر إلكتروني متميز زاد مبيعاتنا بطريقة كبيرة!
+        </p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Client Image">
+          <div>
+            <h4>مارك تومسون</h4>
+            <span>CEO EventMasters</span>
+          </div>
+        </div>
+        <p class="review-text">
+          نظام حجز فعال وسلس بفضل COMPUTING GATE أنصح بالتعامل معهم!
+        </p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Client Image">
+          <div>
+            <h4>ليزا مارتن</h4>
+            <span>مديرة تسويق</span>
+          </div>
+        </div>
+        <p class="review-text">
+          فريق احترافي جدًا، الدعم الفني مميز والنتائج كانت أفضل مما توقعنا.
+        </p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+
+
+      <div class="review-card">
+        <div class="review-header">
+          <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Client Image">
+          <div>
+            <h4>أحمد خالد</h4>
+            <span>مدير تقني</span>
+          </div>
+        </div>
+        <p class="review-text">
+          بفضلهم أصبح لدينا نظام إدارة متميز وواجهة مستخدم رائعة وسهلة.
+        </p>
+        <div class="review-stars">★★★★★</div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="review-controls">
+    <button class="review-button" id="prevBn"><i class='bx bx-chevron-right'></i></button>
+    <button class="review-button" id="nextBn"><i class='bx bx-chevron-left'></i></button>
+  </div>
+
+  <button class="review-viewall-btn">عرض جميع المشاريع</button>
+
+  <div class="review-footer">
+    <strong>132+ شركة تعمل معنا حول العالم</strong>
+  </div>
+</section>
+
+  <section class="faq-section">
+    <div class="faq-header">
+      <h2>الأسئلة الشائعة، إجابات واضحة</h2>
+      <p>نؤمن بالشفافية ونسعى لتزويدك بكل المعلومات التي تحتاجها لاتخاذ قرارات مستنيرة حول خدماتنا.</p>
+    </div>
+
+    <div class="faq-controls">
+      <div class="tabs-fqa">
+        <div class="tab-fqa active" data-type="design">التصميم</div>
+        <div class="tab-fqa" data-type="development">التطوير</div>
+        <div class="tab-fqa" data-type="marketing">التسويق</div>
+        <div class="tab-fqa" data-type="management">الإدارة</div>
+      </div>
+
+      <button class="ask-btn">اسأل سؤال</button>
+    </div>
+
+    <div class="faq-grid" id="faqContainer">
+      <p style="text-align:center;">جاري تحميل الأسئلة...</p>
+    </div>
+  </section>
+
+  <section class="contactus">
+  <div class="contact-container">
+    <h2>تواصل مع COMPUTING GATE</h2>
+    <p>جاهزون لمساعدتك في رحلتك الرقمية؟ تواصل معنا اليوم، فريقنا جاهز للرد على استفساراتك والتعاون لتحقيق أهدافك.</p>
+
+    <div class="contact-content">
+      <form class="contact-form" id="contactForm">
+        <div class="input-group">
+          <label>الاسم الأول</label>
+          <input type="text" id="firstName" required>
+        </div>
+        <div class="input-group">
+          <label>الاسم الأخير</label>
+          <input type="text" id="lastName">
+        </div>
+        <div class="input-group">
+          <label>البريد الإلكتروني</label>
+          <input type="email" id="email" required>
+        </div>
+        <div class="input-group">
+          <label>الهاتف</label>
+          <input type="tel" id="phone">
+        </div>
+        <div class="input-group full">
+          <label>الرسالة</label>
+          <textarea id="message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">أرسل رسالتك</button>
+      </form>
+
+      <div class="contact-info">
+        <div class="info-item">
+          <i class='bx bx-envelope'></i>
+          <span>support@ComputingGate.com</span>
+        </div>
+        <div class="info-item">
+          <i class='bx bx-phone'></i>
+          <span>+91 00000 00000</span>
+        </div>
+        <div class="info-item">
+          <i class='bx bx-map'></i>
+          <span>Somewhere in the World</span>
+        </div>
+
+        <div class="social-media">
+          <p>تابعنا على مواقع التواصل</p>
+          <div class="social-icons">
+            <i class='bx bxl-facebook'></i>
+            <i class='bx bxl-instagram'></i>
+            <i class='bx bxl-linkedin'></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer>
+   <div class="footer-logo-responsive">
+    <div class="small">
+    <span>COMPUTING GATE</span>
+  <img src="img/mainlogo.png" alt="الشعار المتجاوب">
+  </div>
+</div>
+
+    <div class="footer-top">
+
+      <div class="footer-logo">
+        <img src="img/mainlogo.png" alt="شعار AZ">
+      </div>
+
+      <div class="footer-links">
+        <div class="footer-column">
+          <h4>الرئيسية</h4>
+          <ul>
+            <li><a href="#">آراء العملاء</a></li>
+            <li><a href="#">الأسئلة الشائعة</a></li>
+            <li><a href="#">لماذا نحن؟</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>الخدمات</h4>
+          <ul>
+            <li><a href="#">تصميم واجهة المستخدم وتجربة المستخدم</a></li>
+            <li><a href="#">تصميم جرافيك</a></li>
+            <li><a href="#">التصوير الفوتوغرافي</a></li>
+            <li><a href="#">إدارة وسائل التواصل الاجتماعي</a></li>
+            <li><a href="#">البرمجة والتطوير</a></li>
+            <li><a href="#">إدارة المشاريع</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>الوظائف</h4>
+          <ul>
+            <li><a href="#">مصمم</a></li>
+            <li><a href="#">مطور</a></li>
+            <li><a href="#">كبير مصممي واجهة المستخدم</a></li>
+            <li><a href="#">رئيس فريق</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>معلومات عنا</h4>
+          <ul>
+            <li><a href="#">الشركة</a></li>
+            <li><a href="#">العملاء</a></li>
+            <li><a href="#">المشاريع</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-boxes">
+
+      <div class="footer-box">
+        <span>لنبدأ العمل معًا</span>
+        <h3>هل لديك فكرة؟ <i class='bx bx-left-arrow-alt sec'></i></h3>
+      </div>
+
+      <div class="footer-box">
+        <span>أدوات إبداعية (قريبًا)</span>
+        <h3>الدورات والأدوات <i class='bx bx-left-arrow-alt sec'></i></h3>
+      </div>
+
+      <div class="footer-box">
+        <span>تابعنا على</span>
+        <div class="footer-socials">
+          <a href="#"><i class='bx bxl-facebook'></i></a>
+          <a href="#"><i class='bx bxl-instagram'></i></a>
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div>
+        <a href="#">الشروط والأحكام</a> |
+        <a href="#">سياسة الخصوصية</a>
+      </div>
+      <div>© 2024 COMPUTING GATE. جميع الحقوق محفوظة.</div>
+    </div>
+
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
+
