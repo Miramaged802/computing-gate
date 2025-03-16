@@ -178,10 +178,9 @@ window.onload = () => fetchProjects("design");
 
 const faqContainer = document.getElementById("faqContainer");
 const tabsfqa = document.querySelectorAll(".tab");
-
 tabsfqa.forEach((tab) => {
-  tabsfqa.addEventListener("click", () => {
-    tabs.forEach((t) => t.classList.remove("active"));
+  tab.addEventListener("click", () => {
+    tabsfqa.forEach((t) => t.classList.remove("active"));
     tab.classList.add("active");
     const type = tab.getAttribute("data-type");
     fetchFAQs(type);
