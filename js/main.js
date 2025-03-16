@@ -252,7 +252,7 @@ function renderFAQs(faqs) {
       } else {
         faqItem.classList.add("active");
         toggleBtn.textContent = "−";
-        answerDiv.style.maxHeight = answerDiv.scrollHeight + "px";
+        answerDiv.style.maxHeight =  "50px";
         answerDiv.style.padding = "15px 20px";
       }
     });
