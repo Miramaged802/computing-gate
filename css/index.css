@@ -823,7 +823,7 @@ nav {
    .footer-links {
        display: grid;
        grid-template-columns: repeat(3, 1fr);
-       gap: 40px 20px;
+       gap: 40px 80px;
    }
 
    .footer-column h4 {
