@@ -320,6 +320,12 @@ nav {
 
 .services3 {
     display: flex;
+    background-image: url("../img/Container 3.png");
+    object-fit: contain;
+    background-size: cover;
+    margin-top: 20px;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 80px 20px;
     background-color: #000E0F;
 }
@@ -427,7 +433,7 @@ nav {
 
 .tags {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     gap: 8px;
     margin: 10px 0;
 }
@@ -436,7 +442,7 @@ nav {
     border: 1px solid rgba(0, 255, 255, 0.4);
     border-radius: 50px;
     padding: 4px 12px;
-    font-size: 12px;
+    font-size: 10px;
     color: #9CA3AF;
 }
 
@@ -479,17 +485,20 @@ nav {
 .left-info {
     width: 30%;
     display: flex;
+    text-align: left;
     flex-direction: column;
     justify-content: center;
     gap: 20px;
 }
 
 .left-info h2 {
+    text-align: right;
     font-size: 36px;
     color: #E5FFFD;
 }
 
 .left-info p {
+    text-align: right;
     color: #649B9B;
     font-size: 16px;
     max-width: 500px;
@@ -813,7 +822,7 @@ nav {
 
    .footer-links {
        display: grid;
-       grid-template-columns: repeat(4, 1fr);
+       grid-template-columns: repeat(3, 1fr);
        gap: 40px 20px;
    }
 
