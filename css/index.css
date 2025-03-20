@@ -1602,8 +1602,6 @@ nav {
                             font-size: 20px;
                             color: #FFFFFF;
                             display: flex;
-                            align-items: center;
-                            justify-content: center;
                          }
             .footer-links {
                 grid-template-columns: 1fr 1fr;
