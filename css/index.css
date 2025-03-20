@@ -1058,13 +1058,15 @@ nav {
             font-size: 16px;
         }
     
-    
+        .boott{
+            display: flex;
+            justify-content: space-between;
+        }
         .review-controls {
             display: flex;
-            justify-content: center;
+            justify-content: end;
             align-items: center;
             gap: 10px;
-            margin-top: 20px;
         }
     
         .review-button {
@@ -1088,6 +1090,8 @@ nav {
         }
     
         .review-footer {
+            display: flex;
+            justify-content: center;
             margin-top: 15px;
             color: #649B9B;
             font-size: 14px;
