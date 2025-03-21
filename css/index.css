@@ -664,7 +664,14 @@ nav {
     color: #649b9b;
     margin-bottom: 40px;
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin-top: 30px;
+    text-align: right;
+}
+.digital-projects-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .digital-tabs {
@@ -789,8 +796,64 @@ nav {
     font-size: 24px;
 }
 
+.digital-slider-buttons {
+    display: flex;
+    background-color: #00171A;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 36px;
+    padding: 15px;
+    border-radius: 15px;
+    border: 1px solid #00393D;
+    gap: 15px;
+    margin-top: 20px;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.digital-prev-photo {
+    background: linear-gradient(248.01deg, #003033 4.99%, rgba(0, 29, 31, 0) 84.35%);
+    border-radius: 15px;
+    border: 1px solid #00393D;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+}
+.digital-next-photo i {
+    color: #fff;
+    align-items: center;
+    font-size: 24px;
+}
+.digital-next-photo{
+    
+    background: linear-gradient(248.01deg, #003033 4.99%, rgba(0, 29, 31, 0) 84.35%);
+    border-radius: 15px;
+    border: 1px solid #00393D;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 24px;
+}
 
-
+@media  (max-width: 768px) {
+.digital-slider-buttons{
+    width: 30%;
+}
+    
+}
 
 
 footer {
@@ -1375,7 +1438,6 @@ p {
     /* تحسينات القسم العلوي (الهيرو) */
     .head {
         height: auto;
-        min-height: 100vh;
     }
 
     .hero {

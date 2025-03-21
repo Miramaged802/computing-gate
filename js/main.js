@@ -85,10 +85,6 @@ updateSlider();
 
 
 
-
-
-
-
 const container = document.getElementById("digitalProjectContainer");
 const tabs = document.querySelectorAll(".digital-tab");
 let currentInd = 0;
@@ -109,7 +105,11 @@ async function fetchProjects(type) {
     `https://admin.azsystems.tech/api/projects?type=${type}&count=10`
   );
   const data = await res.json();
-  projects = data.data;
+  projects = data.data.map((p, index) => ({
+    ...p,
+    currentPhotoIndex: 0,
+    originalIndex: index,
+  }));
   renderProjects();
 }
 
@@ -118,7 +118,7 @@ function projectsPerView() {
 }
 
 function renderProjects() {
-  container.innerHTML = "";
+  let content = "";
   const perView = projectsPerView();
   const displayProjects = projects.slice(
     currentInd * perView,
@@ -131,7 +131,11 @@ function renderProjects() {
   }
 
   displayProjects.forEach((p) => {
-    container.innerHTML += `
+    const photoSlice = p.photos.slice(
+      p.currentPhotoIndex,
+      p.currentPhotoIndex + 2
+    );
+    content += `
       <div class="digital-project-card">
         <div class="digital-project-header">
           <h3 class="digital-project-title">${p.name_ar}</h3>
@@ -144,36 +148,78 @@ function renderProjects() {
           <span class="digital-tag">النوع: ${p.type}</span>
         </div>
         <div class="digital-project-images">
-          ${p.photos
+          ${photoSlice
             .map(
               (photo) =>
                 `<img src="https://admin.azsystems.tech/${photo.photo}">`
             )
             .join("")}
         </div>
+        <div class="digital-slider-buttons">
+         <div class ="button-container">
+          <button class="digital-prev-photo" data-original-index="${
+            p.originalIndex
+          }" ${
+      p.currentPhotoIndex === 0 ? "disabled" : ""
+    }><i class='bx bx-chevron-left'></i></button>
+          <button class="digital-next-photo" data-original-index="${
+            p.originalIndex
+          }" ${
+      p.currentPhotoIndex + 2 >= p.photos.length ? "disabled" : ""
+    }><i class='bx bx-chevron-right'></i></button>
+        </div>
+        </div>
       </div>
     `;
+  });
+
+  container.innerHTML = content;
+
+  document.querySelectorAll(".digital-next-photo").forEach((btn) => {
+    btn.onclick = (e) => {
+      // Use currentTarget instead of target to always get the button
+      const button = e.currentTarget;
+      const idx = button.dataset.originalIndex;
+      if (projects[idx].currentPhotoIndex + 2 < projects[idx].photos.length) {
+        projects[idx].currentPhotoIndex += 2;
+        renderProjects();
+      }
+    };
+  });
+
+  document.querySelectorAll(".digital-prev-photo").forEach((btn) => {
+    btn.onclick = (e) => {
+      // Use currentTarget instead of target to always get the button
+      const button = e.currentTarget;
+      const idx = button.dataset.originalIndex;
+      if (projects[idx].currentPhotoIndex > 0) {
+        projects[idx].currentPhotoIndex -= 2;
+        renderProjects();
+      }
+    };
   });
 }
 
 digitalNextBtn.onclick = () => {
-  if ((currentInd + 1) * projectsPerView() < projects.length)
-    currentInd++, renderProjects();
+  if ((currentInd + 1) * projectsPerView() < projects.length) {
+    currentInd++;
+    renderProjects();
+  }
 };
+
 digitalPrevBtn.onclick = () => {
-  if (currentInd > 0) currentInd--, renderProjects();
+  if (currentInd > 0) {
+    currentInd--;
+    renderProjects();
+  }
 };
 
 window.onresize = () => {
   currentInd = 0;
   renderProjects();
 };
+
 window.onload = () => fetchProjects("design");
-
-
-
-
-
 
 
 const faqContainer = document.getElementById("faqContainer");
