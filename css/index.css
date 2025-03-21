@@ -136,7 +136,7 @@ nav {
 .hero-buttons {
     display: flex;
     gap: 15px;
-    flex-wrap: wrap;
+    width: 100%;
     margin-top: 20px;
 }
 
@@ -1558,7 +1558,7 @@ nav {
 
 @media (max-width: 576px) {
     .hero-buttons {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     .btn {
@@ -1642,6 +1642,9 @@ nav {
     
             .footer-box {
                 padding: 20px;
+            }
+            .hero-left{
+                margin-bottom: 0px;
             }
     
         }
