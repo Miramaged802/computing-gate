@@ -161,12 +161,12 @@ function renderProjects() {
             p.originalIndex
           }" ${
       p.currentPhotoIndex === 0 ? "disabled" : ""
-    }><i class='bx bx-chevron-left'></i></button>
+    }><i class='bx bx-chevron-right'></i></button>
           <button class="digital-next-photo" data-original-index="${
             p.originalIndex
           }" ${
       p.currentPhotoIndex + 2 >= p.photos.length ? "disabled" : ""
-    }><i class='bx bx-chevron-right'></i></button>
+    }><i class='bx bx-chevron-left'></i></button>
         </div>
         </div>
       </div>
